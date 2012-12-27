@@ -7,7 +7,7 @@
 Summary:	Spreadsheet::Read - Read the data from a spreadsheet
 Name:		perl-Spreadsheet-Read
 Version:	0.47
-Release:	1
+Release:	2
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/Spreadsheet/%{pdir}-%{pnam}-%{version}.tgz
@@ -37,6 +37,9 @@ For SquirrelCalc there is a very simplistic built-in parser
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
+
+%{__sed} -i -e '/#!\/pro\/bin\/perl/d' Read.pm
+%{__sed} -i -e 's|/pro/bin/perl|%{_bindir}/perl|' examples/*
 
 %build
 AUTOMATED_TESTING=1 \
