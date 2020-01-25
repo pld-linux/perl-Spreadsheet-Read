@@ -3,7 +3,6 @@
 #
 %define		pdir	Spreadsheet
 %define		pnam	Read
-%include	/usr/lib/rpm/macros.perl
 Summary:	Spreadsheet::Read - Read the data from a spreadsheet
 Name:		perl-Spreadsheet-Read
 Version:	0.47
