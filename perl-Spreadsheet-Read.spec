@@ -6,7 +6,7 @@
 Summary:	Spreadsheet::Read - Read the data from a spreadsheet
 Name:		perl-Spreadsheet-Read
 Version:	0.47
-Release:	2
+Release:	3
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/Spreadsheet/%{pdir}-%{pnam}-%{version}.tgz
